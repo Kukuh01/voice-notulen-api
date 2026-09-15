@@ -7,6 +7,7 @@ Usage:
 """
 import subprocess
 import sys
+import torchaudio
 
 
 def check_python():
@@ -155,3 +156,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+if not hasattr(torchaudio, "set_audio_backend"):
+    torchaudio.set_audio_backend = lambda backend: None

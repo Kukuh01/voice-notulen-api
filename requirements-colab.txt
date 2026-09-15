@@ -12,12 +12,12 @@ python-multipart>=0.0.9
 transformers>=4.38.0
 accelerate>=0.26.0
 google-genai>=0.1.0
-pyannote.audio>=3.1.0,<3.2.0
+pyannote.audio>=3.3.1
 
 # Audio & Signal Processing
 librosa>=0.10.1
 soundfile>=0.12.1
-numpy>=1.24.0,<2.0.0
+numpy<2.0.0
 numba>=0.58.0
 
 # Evaluation & Data Handling
