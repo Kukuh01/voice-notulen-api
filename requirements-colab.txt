@@ -1,0 +1,25 @@
+# Voice Notulen API - Google Colab GPU Requirements
+# Preserves Colab GPU build while ensuring pyannote.audio torchaudio compatibility.
+
+# Web Framework & API
+fastapi>=0.109.0,<0.116.0
+uvicorn[standard]>=0.27.0,<0.35.0
+pydantic>=2.6.0,<3.0.0
+pydantic-settings>=2.2.0,<3.0.0
+python-multipart>=0.0.9
+
+# AI Models & LLM
+transformers>=4.38.0
+accelerate>=0.26.0
+google-genai>=0.1.0
+pyannote.audio>=3.1.0,<3.2.0
+
+# Audio & Signal Processing
+librosa>=0.10.1
+soundfile>=0.12.1
+numpy>=1.24.0,<2.0.0
+numba>=0.58.0
+
+# Evaluation & Data Handling
+jiwer>=3.0.3
+pandas>=2.2.0
