@@ -14,8 +14,8 @@ google-genai>=0.1.0
 pyannote.audio>=3.1.0,<3.2.0
 
 # PyTorch & TorchAudio (Pinned <2.2.0 for pyannote.audio set_audio_backend compatibility)
-torch>=2.1.0,<2.2.0
-torchaudio>=2.1.0,<2.2.0
+# torch>=2.1.0,<2.2.0
+# torchaudio>=2.1.0,<2.2.0
 
 # Audio & Signal Processing
 librosa>=0.10.1
