@@ -42,6 +42,8 @@ def check_transformers():
         print("[FAIL] transformers is not installed.")
         return False
 
+if not hasattr(torchaudio, "set_audio_backend"):
+    torchaudio.set_audio_backend = lambda backend: None
 
 def check_pyannote():
     try:
@@ -156,6 +158,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-if not hasattr(torchaudio, "set_audio_backend"):
-    torchaudio.set_audio_backend = lambda backend: None
