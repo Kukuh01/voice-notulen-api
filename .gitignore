@@ -1,0 +1,29 @@
+.antigravity/
+
+# Environment secrets
+.env
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Storage files (keep directory structure)
+storage/uploads/*
+!storage/uploads/.gitkeep
+storage/processed/*
+!storage/processed/.gitkeep
+storage/results/*
+!storage/results/.gitkeep
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
